@@ -8,7 +8,7 @@ defmodule Examen.Repo.Migrations.CreateBooks do
       add :publisher, :string
       add :copies, :integer
       add :author_id, references(:authors)
-      add :library_id, references(:library)
+      add :library_id, references(:libraries)
     end
   end
 end
