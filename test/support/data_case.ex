@@ -16,6 +16,8 @@ defmodule Examen.DataCase do
 
   use ExUnit.CaseTemplate
 
+
+
   using do
     quote do
       alias Examen.Repo
@@ -24,6 +26,7 @@ defmodule Examen.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import Examen.DataCase
+      import Examen.Factory
     end
   end
 

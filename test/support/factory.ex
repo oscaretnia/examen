@@ -1,9 +1,9 @@
 defmodule Examen.Factory do
-  
+
   use ExMachina.Ecto, repo: Examen.Repo
 
   def author_factory do
-    %Example.Author{
+    %Examen.Author{
       first_name: "John",
       last_name: "Doe",
       nationality: "American"
@@ -12,19 +12,19 @@ defmodule Examen.Factory do
 
   def library_factory do
     name = sequence(:name, &"Library #{&1}")
-    email = sequence(:email, &"email-#{&1}@example.com")
-    %Example.Library{
+    mail = sequence(:mail, &"email-#{&1}@example.com")
+    %Examen.Library{
       name: name,
       address: "Address library",
       phone: "1234567890",
-      email: email
+      mail: mail
     }
   end
 
   def book_factory do
     title = sequence(:title, &"Book #{&1}")
     description = sequence(:description, &"Description Book #{&1}")
-    %MyApp.Book{
+    %Examen.Book{
       title: title,
       description: description,
       publisher: "Publisher American",
