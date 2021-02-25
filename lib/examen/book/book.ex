@@ -14,10 +14,10 @@ defmodule Examen.Book do
   def changeset(book, params \\ %{}) do
     book
     |> cast(params, [:title, :description, :publisher, :copies, :author_id, :library_id])
+    |> validate_required([:title, :description, :publisher, :copies, :author_id, :library_id])
     |> cast_assoc(:author)
     |> cast_assoc(:library)
     |> assoc_constraint(:author)
     |> assoc_constraint(:library)
-    |> validate_required([:title, :description, :publisher, :copies, :author_id, :library_id])
   end
 end
