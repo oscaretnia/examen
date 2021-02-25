@@ -1,6 +1,6 @@
-defmodule Example.Factory do
-  # with Ecto
-  use ExMachina.Ecto, repo: MyApp.Repo
+defmodule Examen.Factory do
+  
+  use ExMachina.Ecto, repo: Examen.Repo
 
   def author_factory do
     %Example.Author{

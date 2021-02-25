@@ -1,20 +1,8 @@
-# Examen
-
-To start your Phoenix server:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Puntos a evaluar
+1. van a crear 3 tablas, (bliblioteca, libros y autores)
+2. sus respectivos relaciones tanto en migraciones como en las entidades
+3. implementar la libreria de ex_machina y van a crear pruebas con estas tres tablas
+4. pruebas de listar con joins, verificar la cantidad de registros
+5. pruebas de insert y validacion de changeset cuando es valido y cuando no
+6. pruebas de update y validacion de changeset cuando es valido y cuando no lo es
+7. pruebas de delete y validacion de changeset cuando es valido y cuando no lo es
